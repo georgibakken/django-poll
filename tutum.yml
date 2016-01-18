@@ -1,0 +1,9 @@
+db:
+  image: postgres
+web:
+  image: georgibakken/django-poll
+  autorestart: always
+  ports:
+    - "8000:8000"
+  links:
+    - db
