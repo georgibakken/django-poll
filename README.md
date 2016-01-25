@@ -2,15 +2,16 @@
 
 Simple poll web-application.
 
-#Prerequisites
+##Prerequisites
 - Docker installed
 - Docker-compose installed
 
-#Install
+##Install
 - Clone repository
 - Run "docker-compose up -d" in project folder
 - Migrate: "docker-compose run web python manage.py migrate"
 
-Access at localhost:8000
+Access at localhost:8000/polls
 
 To create superuser run "docker-compose run web python manage.py createsuperuser"
+Access admin at localhost:8000/admin
